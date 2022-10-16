@@ -36,3 +36,85 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  font-family: "Raleway",sans-serif;
+  font-size: 102px;
+  font-weight: 700;
+}
+
+.musicWrapper {
+  padding: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+/** Buttons **/
+#js-btn-login {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #1ecd97;
+  color: #1ecd97;
+  cursor: pointer;
+  font-size: 2vmin;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  margin-top:20%;
+}
+
+#js-btn-login:hover {
+  background: #1ecd97;
+  color: #333;
+}
+
+.btn--login {
+  margin: 0 auto;
+}
+
+.templateCol {
+  display: grid;
+  width: 70%;
+  margin-left:auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+#js-btn-login-yt {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #FF0000;
+  color: #FF0000;
+  cursor: pointer;
+  font-size: 2vmin;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  margin-top:20%;
+}
+
+#js-btn-login-yt:hover {
+  background: #FF0000;
+  color: #333;
+}
+
+#syncBtn {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #00008b;
+  color: #00008b;
+  cursor: pointer;
+  font-size: 2vmin;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+#syncBtn:hover {
+  background: #00008b;
+  color: #FFF;
+}

@@ -7,7 +7,7 @@ import AccountInputs from './AccountInputs';
 class Feature extends Component {
     state = {
         songs : []
-    } 
+    }
 
 
 
@@ -29,15 +29,17 @@ class Feature extends Component {
         console.log("button clicked")
     }
 
-    render() { 
+    render() {
         return (
             <React.Fragment>
-                <h1>{this.props.title}</h1>
+              <div class="musicWrapper">
+                <h1 style={{fontWeight: "700", fontSize: "52px"}}>{this.props.title}</h1>
                 <AccountInputs onSubmit={() => this.props.onSubmit} style={{width: "100%"}} ytLogIn={this.ytLogIn}/>
                 <div>{this.state.songs}</div>
+              </div>
             </React.Fragment>
         );
     }
 }
- 
+
 export default Feature;
