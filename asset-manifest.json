@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/OneMusic/static/css/main.073c9b0a.css",
-    "main.js": "/OneMusic/static/js/main.2e6dbf5d.js",
-    "static/js/787.ae2b2986.chunk.js": "/OneMusic/static/js/787.ae2b2986.chunk.js",
-    "index.html": "/OneMusic/index.html",
-    "main.073c9b0a.css.map": "/OneMusic/static/css/main.073c9b0a.css.map",
-    "main.2e6dbf5d.js.map": "/OneMusic/static/js/main.2e6dbf5d.js.map",
-    "787.ae2b2986.chunk.js.map": "/OneMusic/static/js/787.ae2b2986.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.314cb09b.js",
+    "static/js/787.ae2b2986.chunk.js": "/static/js/787.ae2b2986.chunk.js",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.314cb09b.js.map": "/static/js/main.314cb09b.js.map",
+    "787.ae2b2986.chunk.js.map": "/static/js/787.ae2b2986.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.2e6dbf5d.js"
+    "static/js/main.314cb09b.js"
   ]
 }
