@@ -8,6 +8,7 @@ import NotFound from './utils/NotFound'
 import Footer from "./shared/Footer";
 import NavBar from "./shared/NavBar";
 import Feature from './components/feature';
+import SpotifyLogIn from './utils/spotifyLogIn';
 
 const test = (
     <React.Fragment>
@@ -28,6 +29,7 @@ const App = () => {
          <Routes>
            <Route exact path="/" name="Home Page" element={<HomePage/>} />
            <Route exact path="/music" name="Music" element={<MusicPage/>} />
+           <Route path="*" name="Spotify Log IN" element={<SpotifyLogIn/>} />
          </Routes>
      </HashRouter>
 

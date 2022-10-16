@@ -1,8 +1,8 @@
 {
   "name": "onemusic",
   "version": "0.1.0",
-  "homepage": "http://swemau.me/",
-  "private": true,
+  "homepage": "https://swemau.me/OneMusic/",
+  "private": false,
   "dependencies": {
     "@react-spring/parallax": "^9.5.5",
     "@testing-library/jest-dom": "^5.16.5",
