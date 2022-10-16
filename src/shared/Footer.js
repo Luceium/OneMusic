@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { CDBFooter,  CDBBox, CDBBtn, CDBIcon, CDBFooterLink} from 'cdbreact';
+import '../styles/shared.css';
 
 class Footer extends Component {
     render() {
