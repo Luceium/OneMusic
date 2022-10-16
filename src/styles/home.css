@@ -1,4 +1,9 @@
 .heroHeader {
   height: 100vh;
+}
 
+h1 {
+  font-family: "Raleway",sans-serif;
+  font-size: 102px;
+  font-weight: 700;
 }
