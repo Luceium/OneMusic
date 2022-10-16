@@ -27,7 +27,8 @@ const App = () => {
         </React.Fragment>
       <HashRouter>
          <Routes>
-           <Route exact path="/" name="Home Page" element={<HomePage/>} />
+          <Route exact path="/" name="Spotify API page" element={<SpotifyTest/>} />
+           <Route exact path="/home" name="Home Page" element={<HomePage/>} />
            <Route exact path="/music" name="Music" element={<MusicPage/>} />
            <Route exact path="/spotifyTest" name="spotifyTest" element={<SpotifyTest/>} />
          </Routes>

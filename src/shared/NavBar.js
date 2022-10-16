@@ -12,7 +12,7 @@ class NavBar extends Component {
         return(
           <Navbar>
             <Container>
-              <Navbar.Brand style={{ fontFamily: "Raleway, sans-serif", fontWeight: "900" }} href="/">ONEMUSIC</Navbar.Brand>
+              <Navbar.Brand style={{ fontFamily: "Raleway, sans-serif", fontWeight: "900" }} href="/#/home">ONEMUSIC</Navbar.Brand>
               <Navbar.Toggle />
               <Navbar.Collapse>
                 <Nav>
