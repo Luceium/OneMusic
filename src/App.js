@@ -32,10 +32,8 @@ const App = () => {
                   <Route path="*" element={<NotFound/>}/>
               </Routes>
           </div>
-        </Router>
-        <React.Fragment>
-            <Footer />
-        </React.Fragment>
+      </Router>
+
     </div>
   );
 }
