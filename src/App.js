@@ -10,6 +10,7 @@ import NotFound from './utils/NotFound'
 import Footer from "./shared/Footer";
 import NavBar from "./shared/NavBar";
 import Feature from './components/feature';
+import SpotifyLogIn from './utils/spotifyLogIn';
 
 const test = (
     <React.Fragment>
@@ -18,6 +19,8 @@ const test = (
 );
 
 const App = () => {
+    //const urlPrefix = "/OneMusic";
+    const urlPrefix = "";
 
   return (
     <div className="App">
@@ -29,7 +32,7 @@ const App = () => {
          <Routes>
            <Route exact path="/" name="Home Page" element={<HomePage/>} />
            <Route exact path="/music" name="Music" element={<MusicPage/>} />
-           <Route exact path="/spotifyTest" name="spotifyTest" element={<SpotifyTest/>} />
+           <Route path="*" name="Spotify Log IN" element={<SpotifyLogIn/>} />
          </Routes>
      </HashRouter>
 
