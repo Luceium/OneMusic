@@ -22,9 +22,6 @@ const App = () => {
               </Routes>
           </div>
       </Router>
-      <React.Fragment>
-            <Footer />
-        </React.Fragment>
 
     </div>
   );
