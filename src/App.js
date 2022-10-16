@@ -15,6 +15,9 @@ const test = (
 );
 
 const App = () => {
+    //const urlPrefix = "/OneMusic";
+    const urlPrefix = "";
+
   return (
     <div className="App">
         <React.Fragment>
@@ -23,9 +26,9 @@ const App = () => {
         <Router>
           <div>
               <Routes>
-                  <Route exact path={"/"} element={<HomePage/>}/>
-                  <Route exact path={"/test"} element={test}/>
-                  <Route exact path={"/music"} element={<MusicPage/>}/>
+                  <Route exact path={urlPrefix + "/"} element={<HomePage/>}/>
+                  <Route exact path={urlPrefix + "/music"} element={<MusicPage/>}/>
+
                   <Route path="*" element={<NotFound/>}/>
               </Routes>
           </div>
