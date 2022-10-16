@@ -87,13 +87,13 @@
     <br/>
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
-      /**
-       * Sample JavaScript code for youtube.playlistItems.list
-       * See instructions for running APIs Explorer code samples locally:
-       * https://developers.google.com/explorer-help/code-samples#javascript
-       */
     
+    gapi.load("client:auth2", function() {
+        gapi.auth2.init({client_id: "1005091690491-bm3qfhmcp0lsqjdekujcuc3r46aq95pj.apps.googleusercontent.com"});
+      });
+      
       function authenticate() {
+
         return gapi.auth2.getAuthInstance()
             .signIn({scope: "https://www.googleapis.com/auth/youtube.readonly"})
             .then(function() { console.log("Sign-in successful"); },
@@ -105,8 +105,9 @@
             .then(function() { console.log("GAPI client loaded for API"); },
                   function(err) { console.error("Error loading GAPI client for API", err); });
       }
-      // Make sure the client is loaded and sign-in is complete before calling this method.
-      function execute() {
+
+
+      function executeGet() {
         return gapi.client.youtube.playlistItems.list({
           "part": [
             "contentDetails"
@@ -114,39 +115,14 @@
           "playlistId": "PLcQ9-zjhHvF4W73Cyzup0BccHswprO_R1"
         })
             .then(function(response) {
-                    // Handle the results here (response.result has the parsed body).
+          
                     console.log("Response", response);
                   },
                   function(err) { console.error("Execute error", err); });
       }
-      gapi.load("client:auth2", function() {
-        gapi.auth2.init({client_id: "1005091690491-bm3qfhmcp0lsqjdekujcuc3r46aq95pj.apps.googleusercontent.com"});
-      });
-    </script>
-    <button onclick="authenticate().then(loadClient)">Authorize (For getting playlist info)</button>
-    <button onclick="execute()">Get Playlist Info</button>
-    <script src="https://apis.google.com/js/api.js"></script>
-<script>
-  /**
-   * Sample JavaScript code for youtube.playlistItems.insert
-   * See instructions for running APIs Explorer code samples locally:
-   * https://developers.google.com/explorer-help/code-samples#javascript
-   */
+   
 
-  function authenticate() {
-    return gapi.auth2.getAuthInstance()
-        .signIn({scope: "https://www.googleapis.com/auth/youtube.force-ssl"})
-        .then(function() { console.log("Sign-in successful"); },
-              function(err) { console.error("Error signing in", err); });
-  }
-  function loadClient() {
-    gapi.client.setApiKey("AIzaSyBJnV3w1sOdXHKWZunDoW0GOxOXgH6p78k");
-    return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
-        .then(function() { console.log("GAPI client loaded for API"); },
-              function(err) { console.error("Error loading GAPI client for API", err); });
-  }
-  // Make sure the client is loaded and sign-in is complete before calling this method.
-  function execute() {
+  function executeInsert() {
     return gapi.client.youtube.playlistItems.insert({
       "part": [
         "snippet"
@@ -163,7 +139,7 @@
       }
     })
         .then(function(response) {
-                // Handle the results here (response.result has the parsed body).
+
                 console.log("Response", response);
               },
               function(err) { console.error("Execute error", err); });
@@ -172,7 +148,8 @@
     gapi.auth2.init({client_id: "1005091690491-bm3qfhmcp0lsqjdekujcuc3r46aq95pj.apps.googleusercontent.com"});
   });
 </script>
-<button onclick="authenticate().then(loadClient)">Authorize (For Adding Vids to a playlist)</button>
-<button onclick="execute()">Add Video to playlist</button>
+<button onclick="authenticate().then(loadClient)">Authorize</button>
+<button onclick="executeInsert()">Add Video to playlist</button>
+<button onclick="executeGet()">Get Playlist Info</button>
   </body>
 </html>
