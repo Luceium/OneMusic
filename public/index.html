@@ -55,6 +55,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+ <br/>
+    <br/>
+    <br/>
+    <br/>
     <br/>
     <br/>
     <br/>
@@ -91,7 +95,7 @@
     gapi.load("client:auth2", function() {
         gapi.auth2.init({client_id: "1005091690491-bm3qfhmcp0lsqjdekujcuc3r46aq95pj.apps.googleusercontent.com"});
       });
-      
+
       function authenticate() {
 
         return gapi.auth2.getAuthInstance()
@@ -149,7 +153,7 @@
   });
 </script>
 <button onclick="authenticate().then(loadClient)">Authorize</button>
-<button onclick="executeInsert()">Add Video to playlist</button>
+<!--<button onclick="executeInsert()">Add Video to playlist</button>-->
 <button onclick="executeGet()">Get Playlist Info</button>
   </body>
 </html>
