@@ -10,7 +10,7 @@ class Feature extends Component {
         return (
             <React.Fragment>
                 <h1>{this.props.title}</h1>
-                <AccountInputs onSubmit={() => this.props.onSubmit}/>
+                <AccountInputs onSubmit={() => this.props.onSubmit} style={{width: "100%"}}/>
                 <div>{this.state.songs}</div>
             </React.Fragment>
         );

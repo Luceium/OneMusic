@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import AccountInput from './AccountInput';
 
-class AccountInputs extends Component {
+class AccountInput extends Component {
     render() { 
         return (
-            <div>
-                <input enterKeyHint={this.props.hint}></input>
-            </div>
+            <input type="text" placeholder={this.props.hint} style={{
+                padding: "3%",
+                margin: "6%",
+                backgroundColor: this.props.color,
+                borderRadius: "20%/50%",
+                display: "inline",
+                width: "30%"
+            }}></input>
         );
     }
 }
  
-export default AccountInputs;
+export default AccountInput;

@@ -26,7 +26,11 @@ const App = () => {
         <Router>
           <div>
               <Routes>
-                  <Route exact path={urlPrefix + "/"} element={<HomePage/>}/>
+                  <Route exact path={urlPrefix + "/"} element={
+                    <React.Fragment>
+                        {<HomePage/>}
+                    </React.Fragment>
+                  }/>
                   <Route exact path={urlPrefix + "/music"} element={<MusicPage/>}/>
 
                   <Route path="*" element={<NotFound/>}/>
