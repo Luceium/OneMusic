@@ -5,19 +5,18 @@ class MusicPage extends Component{
     handleSubmit = () => {
         console.log("hi");
     }
-    
+
     render(){
         return (
             <React.Fragment>
-                <Feature title='Sync Your Music Accounts!' onSubmit={this.handleSubmit()}/>
+                <Feature title='SYNC YOUR MUSIC' onSubmit={this.handleSubmit()}/>
                 <div style={{
                     height: "10vh"
                 }}/>
-                <Feature title='Compare Your Likes With Your Friends!' onSubmit={this.handleSubmit()}/>
+                <Feature title='COMPARE WITH FRIENDS' onSubmit={this.handleSubmit()}/>
             </React.Fragment>
         );
     }
 }
 
 export default MusicPage;
-

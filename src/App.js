@@ -32,7 +32,7 @@ const App = () => {
          <Routes>
            <Route exact path="/" name="Home Page" element={<HomePage/>} />
            <Route exact path="/music" name="Music" element={<MusicPage/>} />
-           <Route path="*" name="Spotify Log IN" element={<SpotifyLogIn/>} />
+           <Route path='*' element={<SpotifyLogIn />}/>
          </Routes>
      </HashRouter>
 

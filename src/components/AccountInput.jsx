@@ -7,8 +7,8 @@ class AccountInput extends Component {
             return (<button onClick={() => this.props.onLogIn} className="btn rounded-pill text-bg-secondary btn-sm" style={{width: "30%"}}>log in</button>);
         }
     }
-    
-    render() { 
+
+    render() {
         return (
             <div style={{
                 display: "flex",
@@ -30,5 +30,5 @@ class AccountInput extends Component {
         );
     }
 }
- 
+
 export default AccountInput;

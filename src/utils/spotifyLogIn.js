@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class SpotifyLogIn extends Component {
-    state = {  } 
+    state = {  }
     render() {
         this.spotifyTokenToLocalStorage();
         window.location = "//" + window.location.hostname + window.location.pathname + "#/music";
@@ -12,12 +12,12 @@ class SpotifyLogIn extends Component {
 
     getSpotifyToken = () => {
         let url = window.location.href;
-        return url.substring(url.indexOf("#") + 2);
+        return url.substring(url.indexOf("#") + 1);
     }
 
     spotifyTokenToLocalStorage = () => {
         localStorage.setItem("spotifyToken", this.getSpotifyToken());
     }
 }
- 
+
 export default SpotifyLogIn;
