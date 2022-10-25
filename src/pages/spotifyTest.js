@@ -10,7 +10,7 @@ function SpotifyTest() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const CLIENT_ID = "df03825d46e042fd89c85edc2b7a8d0a"
+  const CLIENT_ID = "b39a111c5b4e48858cd558cd7d24a641"
   const REDIRECT_URI = "http://localhost:3000/"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"

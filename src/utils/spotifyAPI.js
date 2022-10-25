@@ -12,11 +12,11 @@ async function getUsers() {
         console.log(res.statusText); // OK  
     }
     catch{
-
+        
     }
 }
 async function createPlaylist(){
-    /*try{
+    try{
         let query = "https://api.spotify.com/v1/users/{}/playlists".format(
             "b39a111c5b4e48858cd558cd7d24a641")
         let request_body = json.dumps({
@@ -41,7 +41,7 @@ async function createPlaylist(){
     }
     catch{
 
-    }*/
+    }
 }
 getUsers();
 //createPlaylist();
